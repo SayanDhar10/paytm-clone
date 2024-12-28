@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Navbar";
-import LandingPage from "./LandingPage";
-import Register from "./Register";
-import Login from "./Login";
-import Dashboard from "./Dashboard";
+import LandingPage from "./components/LandingPage.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Register from "./components/Register.jsx";
+import Login from "./components/Login.jsx";
 
-function App() {
+
+const App = () => {
   return (
     <Router>
       <Navbar />
@@ -14,10 +14,12 @@ function App() {
         <Route path="/" element={<LandingPage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/login" element={<Login />} />
-        <Route path="/dashboard" element={<Dashboard />} />
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;
+
+
+

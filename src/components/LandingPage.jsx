@@ -1,10 +1,15 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 const LandingPage = () => {
   return (
-    <div style={{ textAlign: "center", marginTop: "50px" }}>
+    <div style={{ textAlign: 'center', padding: '50px' }}>
       <h1>Welcome to Paytm Clone</h1>
-      <p>Manage your wallet, payments, and transactions seamlessly.</p>
+      <p>Secure Payments Made Easy</p>
+      <div>
+        <Link to="/register" style={{ marginRight: '10px' }}>Register</Link>
+        <Link to="/login">Login</Link>
+      </div>
     </div>
   );
 };
